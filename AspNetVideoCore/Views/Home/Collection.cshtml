@@ -1,0 +1,16 @@
+﻿@model IEnumerable<AspNetVideoCore.Entities.Video>
+@{
+    ViewData["Title"] = "Collection";
+}
+
+<h2>Collection</h2>
+
+@foreach(var video in Model)
+{
+    <tr>
+
+        <td>@video.Id</td>
+        <td>@video.Title</td>
+    </tr>
+
+}
